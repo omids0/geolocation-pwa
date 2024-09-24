@@ -4,14 +4,15 @@ export default function TestWatchPosition(){
     const [userLocation, setUserLocation] = useState<{
         latitude: number;
         longitude: number;
+        speed: number | null
       } | null>(null);
 
       useEffect(() => {
         if (navigator.geolocation) {
             const watchPosition = navigator.geolocation.watchPosition(
               (position) => {
-                const { latitude, longitude } = position.coords;
-                setUserLocation({ latitude, longitude });
+                const { latitude, longitude, speed } = position.coords;
+                setUserLocation({ latitude, longitude, speed });
               },
               (error) => {
                 console.error("Error get user location: ", error);
@@ -19,7 +20,7 @@ export default function TestWatchPosition(){
             );
 
             return () => navigator.geolocation.clearWatch(watchPosition)
-            
+
           } else {
             console.log("Geolocation is not supported by this browser");
           } 
@@ -33,6 +34,7 @@ export default function TestWatchPosition(){
           <h2>User Location</h2>
           <p>Latitude: {userLocation.latitude}</p>
           <p>Longitude: {userLocation.longitude}</p>
+          <p>Speed: {userLocation.speed}</p>
         </div>
       )}
       </div>
