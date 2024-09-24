@@ -20,7 +20,6 @@ export default function TestGeolocation() {
 
           setUserLocation({ latitude, longitude });
         },
-
         (error) => {
           console.error("Error get user location: ", error);
         }
@@ -34,7 +33,7 @@ export default function TestGeolocation() {
     <>
       <h1>Geolocation App</h1>
       {/* create a button that is mapped to the function which retrieves the users location */}
-      <button onClick={getUserLocation}>Get User Location</button>
+      <button onClick={getUserLocation}>Get User Current Location</button>
       {/* if the user location variable has a value, print the users location */}
       {userLocation && (
         <div>
