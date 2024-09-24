@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/geolocation-pwa/static/css/main.f855e6bc.css",
-    "main.js": "/geolocation-pwa/static/js/main.1da28dd1.js",
+    "main.js": "/geolocation-pwa/static/js/main.6842f485.js",
     "static/js/453.05cb0e62.chunk.js": "/geolocation-pwa/static/js/453.05cb0e62.chunk.js",
     "service-worker.js": "/geolocation-pwa/service-worker.js",
     "static/media/logo.svg": "/geolocation-pwa/static/media/logo.103b5fa18196d5665a7e12318285c916.svg",
     "index.html": "/geolocation-pwa/index.html",
     "main.f855e6bc.css.map": "/geolocation-pwa/static/css/main.f855e6bc.css.map",
-    "main.1da28dd1.js.map": "/geolocation-pwa/static/js/main.1da28dd1.js.map",
+    "main.6842f485.js.map": "/geolocation-pwa/static/js/main.6842f485.js.map",
     "453.05cb0e62.chunk.js.map": "/geolocation-pwa/static/js/453.05cb0e62.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.1da28dd1.js"
+    "static/js/main.6842f485.js"
   ]
 }
