@@ -1,12 +1,16 @@
 "use client"
 
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function TestGeolocation() {
   const [userLocation, setUserLocation] = useState<{
     latitude: number;
     longitude: number;
   } | null>(null);
+
+  useEffect(() => {
+    getUserLocation()
+  }, [])
 
   const getUserLocation = () => {
     if (navigator.geolocation) {
